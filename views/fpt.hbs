@@ -1,0 +1,24 @@
+<div class="container mt-5">
+<h1>I'm BACH KIEN</h1>
+<h1>{{fpt}}</h1>
+<h2>Sinh Nam: {{ year }}</h2>
+<ul>
+    {{#each bk }}
+        <li>{{ this }}</li>
+    {{/each}}
+</ul>
+<table border="1">
+    <tr>
+        <th>Country</th>
+        <th>Capital</th>
+    </tr>
+    {{#each capital }}
+        <tr>
+            <td>{{ this.[0] }}</td>
+            <td>{{ this.[1] }}</td>
+        </tr>
+    {{/each}}
+</table>
+<img src="/images/{{images}}" alt="" srcset="">
+
+</div>

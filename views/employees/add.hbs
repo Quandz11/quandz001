@@ -1,0 +1,44 @@
+<form action="/employees" method="post" class="card bg-light mt-5">
+<h1>Add new employee</h1>
+<label for="">Name</label>
+<input class="form-control" type="text" name="name" required>
+<label for="">DOB</label>
+<input class="form-control" type="date" name="dob" id="">
+
+<label for="">Gender</label>
+<div class="card">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Male
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Female
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Others
+  </label>
+</div>
+</div>
+
+<label for="">Position</label>
+<select class="form-control" name="position" id="">
+    <option value="Director">Director</option>
+    <option value="Manager">Manager</option>
+    <option value="Staff">Staff</option>
+    <option value="Security">Security</option>
+</select>
+
+<label for="">Email</label>
+<input class="form-control" type="email" name="email" id="">
+<label for="">Introduction</label>
+<textarea name="introduction" id="" cols="50" rows="5"></textarea>
+
+    <input class="btn btn-danger" type="submit" value="Add">
+</form>
